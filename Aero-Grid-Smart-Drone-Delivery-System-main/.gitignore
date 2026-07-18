@@ -76,9 +76,13 @@ node_modules/
 # Next.js build output
 .next/
 out/
-build/
 /frontend/.next/
 /frontend/out/
+# Anchored so it matches build output only, not the /build app route
+# (an unanchored "build/" also matches frontend/src/app/build/)
+/build/
+/frontend/build/
+/backend/build/
 
 # Testing
 coverage/
