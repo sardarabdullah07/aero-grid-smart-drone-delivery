@@ -90,10 +90,8 @@ Two independently-run services communicating over plain JSON REST:
 
 ## Project Structure
 
-The project root sits one level inside the repository, in `Aero-Grid-Smart-Drone-Delivery-System-main/`. Every path in this README is relative to that directory unless stated otherwise.
-
 ```
-Aero-Grid-Smart-Drone-Delivery-System-main/     <- project root, nested one level inside the repo
+aero-grid-smart-drone-delivery/
 ├── backend/
 │   ├── main.py                  FastAPI app, Pydantic models, all 11 route handlers
 │   ├── weather_classifier.py    Trains/persists GaussianNB, LogisticRegression, DecisionTree
@@ -175,7 +173,7 @@ No database is required — the backend is stateless and stores nothing between 
 ### 1. Backend
 
 ```bash
-cd Aero-Grid-Smart-Drone-Delivery-System-main/backend
+cd backend
 python -m venv venv
 venv\Scripts\activate           # Windows
 # source venv/bin/activate      # macOS / Linux
@@ -195,7 +193,7 @@ Delete `backend/models/*.joblib` afterward so the classifier retrains on the new
 ### 2. Frontend
 
 ```bash
-cd Aero-Grid-Smart-Drone-Delivery-System-main/frontend
+cd frontend
 npm install
 ```
 

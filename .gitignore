@@ -26,7 +26,8 @@ __pycache__/
 *$py.class
 *.so
 .Python
-build/
+# NB: intentionally NOT an unanchored "build/" — that also matches
+# frontend/src/app/build/, the app route. Anchored rules are below.
 develop-eggs/
 dist/
 downloads/
