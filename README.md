@@ -1,4 +1,6 @@
 # Aero-Grid — Smart Drone Delivery System
+Live Demo: https://aerogrid-simulator-ag24303.vercel.app
+API Backend: https://aero-grid-backend.onrender.com
 
 Aero-Grid is a full-stack visualization of four classical AI techniques cooperating to plan and execute a multi-stop drone delivery mission across a 40x40 city grid. A weather classifier issues a pre-flight go/no-go verdict, a genetic algorithm orders the delivery stops to minimize tour distance, A\* finds the collision-free path for each leg around buildings and no-fly zones, and a tabular Q-Learning agent learns a single leg from scratch so its policy can be compared against A\* and stress-tested under new obstacles.
 
